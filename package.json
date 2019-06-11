@@ -1,0 +1,31 @@
+{
+  "name": "vuepress-plugin-comment",
+  "version": "0.0.1",
+  "description": "vuepress commment plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dongyuanxin/vuepress-comment.git"
+  },
+  "keywords": [
+    "vuepress",
+    "comment",
+    "plugin",
+    "vue",
+    "gitalk",
+    "valine"
+  ],
+  "author": "dongyuanxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dongyuanxin/vuepress-comment/issues"
+  },
+  "homepage": "https://github.com/dongyuanxin/vuepress-comment#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "gitalk": "^1.5.0"
+  }
+}
