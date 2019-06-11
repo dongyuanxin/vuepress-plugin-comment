@@ -1,4 +1,4 @@
-> Support popluar comment plugins in Vuepress.
+> Support popluar comment plugins in Vuepress, sucn as Gitalk, Valine, Disqus.
 
 ## Features
 
@@ -15,12 +15,15 @@
 ### Options
 
 - **choosen** `string`
+
   **Required**.
 
 - **options** `object`
+
   **Required**. The options of choosen comment plugin.
 
 - **container** `string`
+
   **Optional, default as `'main.page'`**. The dom selector that contains choosen comment plugin.
 
 
