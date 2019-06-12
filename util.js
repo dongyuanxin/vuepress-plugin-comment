@@ -1,6 +1,14 @@
 import ejs from 'ejs'
 import Gitalk from 'gitalk'
+
+import config from './package.json'
 import 'gitalk/dist/gitalk.css'
+
+const defaultChoosen = 'comment plugins'
+console.log(
+  `How to use "${COMMENT_CHOOSEN || defaultChoosen}" in ${config.name}@v${config.version}:`,
+  config.homepage
+)
 
 /**
  * Render ejs strings in configuration
@@ -35,14 +43,13 @@ export function renderConfig (config, data) {
 export const provider = {
   gitalk: {
     render (frontmatter, commentDomID) {
-      const parentDOM = document.querySelector(COMMENT_CONTAINER)
+      const commentDOM = document.createElement('div')
+      commentDOM.id = commentDomID
 
-      const commentContainerDOM = document.createElement('div')
-      commentContainerDOM.id = commentDomID
-      parentDOM.appendChild(commentContainerDOM)
+      const parentDOM = document.querySelector(COMMENT_CONTAINER)
+      parentDOM.appendChild(commentDOM)
       
       const gittalk = new Gitalk(renderConfig(COMMENT_OPTIONS, { frontmatter }))
-
       gittalk.render(commentDomID)
     },
     clear (commentDomID) {
