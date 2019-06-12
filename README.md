@@ -1,6 +1,6 @@
 # Vuepress-comment-plugin
 
-![version](https://img.shields.io/github/release/vuepress-plugin-comment/Valine.svg?style=flat-square)
+![version](https://img.shields.io/github/release/dongyuanxin/vuepress-plugin-comment.svg?style=flat-square)
 ![](https://img.shields.io/npm/dm/vuepress-plugin-comment.svg?style=flat-square)
 
 > Support popluar comment plugins in Vuepress, sucn as Gitalk, Valine, Disqus.
