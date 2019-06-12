@@ -8,6 +8,7 @@
 
 ## Todo
 
+- Dynamic Import
 - Support Valine, Disqus
 - 中文说明
 
