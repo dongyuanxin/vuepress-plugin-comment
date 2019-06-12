@@ -41,7 +41,7 @@ function clear () {
  * Check if current page needs render comment
  */
 function needComment (frontmatter) {
-  return frontmatter.comment !== false && frontmatter !== false
+  return frontmatter.comment !== false && frontmatter.comments !== false
 }
 
 /**

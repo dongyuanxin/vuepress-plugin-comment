@@ -1,3 +1,8 @@
+# Vuepress-comment-plugin
+
+![version](https://img.shields.io/github/release/vuepress-plugin-comment/Valine.svg?style=flat-square)
+![](https://img.shields.io/npm/dm/vuepress-plugin-comment.svg?style=flat-square)
+
 > Support popluar comment plugins in Vuepress, sucn as Gitalk, Valine, Disqus.
 
 ## Features
@@ -87,7 +92,22 @@ module.exports = {
 
 **Note**: Never use callback function in plugin configuration, that will be filtered by vuepress. So I have to support EJS syntax.
 
-## Options
+### Hide Comment
+
+If you want to hide comment plugin in specified page, set `$frontmatter.comment` or `$frontmatter.comments` to `false`.
+
+For example:
+
+```yml
+---
+comment: false 
+# comments: false 
+---
+```
+
+Comment won't appear in the page of this passage. 
+
+### Options Detail
 
 - **choosen** `string`
 
