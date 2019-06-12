@@ -1,11 +1,8 @@
 <template>
-  <div class="comment-empty"></div>
+  <div></div>
 </template>
 
 <script>
-import 'gitalk/dist/gitalk.css'
-import Gitalk from 'gitalk'
-
 import {
   provider,
   renderConfig
