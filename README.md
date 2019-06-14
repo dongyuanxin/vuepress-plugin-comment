@@ -76,7 +76,7 @@ module.exports = {
         options: {
           id: '<%- frontmatter.commentid || frontmatter.permalink %>',
           title: '「Comment」<%- frontmatter.title %>',
-          body: '<%- frontmatter.title %>：<%-window.location.origin%><%- window.location.pathname %>',
+          body: '<%- frontmatter.title %>：<%-window.location.origin %><%- frontmatter.to.path || window.location.pathname %>',
           clientID: 'GitHub Application Client ID',
           clientSecret: 'GitHub Application Client Secret',
           repo: 'GitHub repo',

@@ -14,15 +14,24 @@ let timer = null
 export default {
   mounted () {
     timer = setTimeout(() => {
-      clear() && needComment(this.$frontmatter) && renderComment(this.$frontmatter)
+      const frontmatter = {
+        to: {},
+        from: {},
+        ...this.$frontmatter
+      }
+      clear() && needComment(frontmatter) && renderComment(frontmatter)
     }, 1000)
 
     this.$router.afterEach((to, from) => {
       if (to && from && to.path === from.path) {
         return
       }
-
-      clear() && needComment(this.$frontmatter) && renderComment(this.$frontmatter)
+      const frontmatter = {
+        to,
+        from,
+        ...this.$frontmatter
+      }
+      clear() && needComment(frontmatter) && renderComment(frontmatter)
     })
   }
 }
