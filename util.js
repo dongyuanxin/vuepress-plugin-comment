@@ -1,8 +1,8 @@
 import ejs from 'ejs'
-import Gitalk from 'gitalk'
+import Gitalk from 'gitalk-fix'
 
 import config from './package.json'
-import 'gitalk/dist/gitalk.css'
+import 'gitalk-fix/dist/gitalk.css'
 
 const defaultChoosen = 'comment plugins'
 console.log(
