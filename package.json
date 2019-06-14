@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-comment",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Support popluar comment plugins in Vuepress, sucn as Gitalk, Valine, Disqus.",
   "main": "index.js",
   "scripts": {
