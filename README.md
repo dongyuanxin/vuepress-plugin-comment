@@ -5,17 +5,21 @@
 
 > Support popluar comment plugins in Vuepress, sucn as Gitalk, Valine, Disqus.
 
+- [Features](#features)
+- [Usage](#usage)
+  - [Install](#install)
+  - [Use with Gitalk](#use-in-gitalk)
+  - [Use with Valine](#use-in-valine)
+  - [Hide comment](#how-to-hide-page-comment)
+- [Options detail](#options-detail)
+- [Todo](#todo)
+
 ## Features
 
 - Support Gitalk, Valine
 - Dynamic Import
 - Response router change and refresh automatic
 - User can use passage's `$frontmatter`
-
-## Todo
-
-- Support Disqus
-- 中文说明
 
 ## Usage
 
@@ -39,7 +43,7 @@ With `cnpm`:
 cnpm i --save vuepress-plugin-comment
 ```
 
-### Choose: `Gitalk`
+### Use in Gitalk
 
 The `options` is exactly the same as `Gitalk` configuration.
 
@@ -92,7 +96,7 @@ module.exports = {
 
 **Note**: Never use callback function in plugin configuration, that will be filtered by vuepress. So I have to support EJS syntax.
 
-### Choose: `Valine`
+### Use in Valine
 
 The `options` is exactly the same as `Valine` configuration.
 
@@ -150,7 +154,7 @@ comment: false
 
 Comment won't appear in the page of this passage. 
 
-### Options Detail
+## Options Detail
 
 - **choosen** `string`
 
@@ -163,3 +167,8 @@ Comment won't appear in the page of this passage.
 - **container** `string`
 
   **Optional, default as `'main.page'`**. The dom selector that contains choosen comment plugin.
+
+## Todo
+
+- Support Disqus
+- 中文说明
