@@ -7,14 +7,14 @@
 
 ## Features
 
-- Support Gitalk
+- Support Gitalk, Valine
+- Dynamic Import
 - Response router change and refresh automatic
 - User can use passage's `$frontmatter`
 
 ## Todo
 
-- Dynamic Import
-- Support Valine, Disqus
+- Support Disqus
 - 中文说明
 
 ## Usage
@@ -92,7 +92,50 @@ module.exports = {
 
 **Note**: Never use callback function in plugin configuration, that will be filtered by vuepress. So I have to support EJS syntax.
 
-### Hide Comment
+### Choose: `Valine`
+
+The `options` is exactly the same as `Valine` configuration.
+
+```javascript
+module.exports = {
+  plugins: [
+    [
+      'vuepress-plugin-comment',
+      {
+        choosen: 'valine', 
+        options: {
+          el: '#valine-vuepress-comment',
+          appId: 'Your own appId',
+          appKey: 'Your own appKey'
+        }
+      }
+    ]
+  ]
+}
+```
+
+If you want to access variables, such as `$frontmatter` and `window`, please use **EJS** syntax.
+
+```javascript
+module.exports = {
+  plugins: [
+    [
+      'vuepress-plugin-comment',
+      {
+        choosen: 'valine', 
+        options: {
+          el: '#valine-vuepress-comment',
+          appId: 'Your own appId',
+          appKey: 'Your own appKey'
+          path: '<%- frontmatter.commentid || frontmatter.permalink %>'
+        }
+      }
+    ]
+  ]
+}
+```
+
+### How to hide page comment
 
 If you want to hide comment plugin in specified page, set `$frontmatter.comment` or `$frontmatter.comments` to `false`.
 
