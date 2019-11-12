@@ -82,7 +82,6 @@ function renderComment (frontmatter) {
       if (el.startsWith('#')) {
         el = el.slice(1)
       }
-      console.log(el)
       return provider.valine.render(frontmatter, el)
     default: return false
   }
