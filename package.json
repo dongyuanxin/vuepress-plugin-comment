@@ -1,7 +1,7 @@
 {
   "name": "vuepress-plugin-comment",
-  "version": "0.7.1",
-  "description": "Support popluar comment plugins in Vuepress, sucn as Gitalk, Valine, Disqus.",
+  "version": "0.7.2",
+  "description": "Comment plugin in vuepress, such as Gitalk, Valine...",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

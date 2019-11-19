@@ -1,7 +1,11 @@
 # Vuepress-comment-plugin
 
+[![](https://img.shields.io/badge/online-preview-faad14.svg?style=popout-square)](https://xin-tan.com/)
+[![](https://img.shields.io/npm/dm/vuepress-plugin-comment.svg?style=flat-square)](https://www.npmjs.com/package/vuepress-plugin-comment)
+[![](https://img.shields.io/badge/vuepress-≥v0.9.0-3eaf7c.svg?style=popout-square)](https://vuepress.vuejs.org/)
+![](https://img.shields.io/badge/license-MIT-blue.svg?style=popout-square)
 ![version](https://img.shields.io/github/release/dongyuanxin/vuepress-plugin-comment.svg?style=flat-square)
-![](https://img.shields.io/npm/dm/vuepress-plugin-comment.svg?style=flat-square)
+
 
 > Support popluar comment plugins in Vuepress, sucn as Gitalk, Valine, Disqus.
 
