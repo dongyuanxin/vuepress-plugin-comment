@@ -8,6 +8,7 @@
 - [Features](#features)
 - [Usage](#usage)
   - [Install](#install)
+  - [⚠️Route object properties](#⚠️Route-object-properties)
   - [Use with Gitalk](#use-in-gitalk)
   - [Use with Valine](#use-in-valine)
   - [Hide comment](#how-to-hide-page-comment)
@@ -42,6 +43,13 @@ With `cnpm`:
 ```bash
 cnpm i --save vuepress-plugin-comment
 ```
+
+
+### ⚠️Route object properties
+
+**Don't use `window` object directly to get route information**.
+
+Plugin has registered correct route information in `frontmatter.to` object and `frontmatter.from` object. Their properties are the same as [vue-router's route object](https://router.vuejs.org/api/#route-object-properties).
 
 ### Use in Gitalk
 
