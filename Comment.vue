@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div class="comment"></div>
 </template>
 
 <script>
@@ -87,3 +87,10 @@ function renderComment (frontmatter) {
   }
 }
 </script>
+
+<style scoped>
+.comment {
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+}
+</style>
